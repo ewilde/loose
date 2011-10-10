@@ -5,14 +5,16 @@
 // ------------------------------------------------------------------------
 
 using System;
+using System.Net;
 
 namespace Loose.Net
 {
-    public class WebClient : IWebClient
+    public class SimpleWebClient : IWebClient
     {
         public string DownloadPage(Uri uri)
         {
-            throw new NotImplementedException();
+            System.Net.WebClient client = new WebClient();
+            
         }
     }
 }

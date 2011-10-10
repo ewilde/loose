@@ -31,7 +31,7 @@ namespace Loose.Model.Configuration
 
         private void Add()
         {
-            this.For<IWebClient>().Use<WebClient>();
+            this.For<IWebClient>().Use<SimpleWebClient>();
         }
     }
 }
